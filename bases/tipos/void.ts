@@ -1,9 +1,12 @@
 (() => {
-    function callBatman(): void {}
-    const a = callBatman();
-    console.log({ a });
+    function callBatman(): void {
+        return;
+    }
 
-    const callSuperman = (): void => {};
-    const b = callSuperman();
-    console.log({ b });
+    const callSuperman = (): void => {
+        return;
+    };
+
+    const a = callBatman();
+    console.log(a);
 })();

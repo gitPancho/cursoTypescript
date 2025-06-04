@@ -1,7 +1,7 @@
 (() => {
     type Hero = {
         name: string;
-        age: number;
+        age?: number;
         powers: number[];
         getName?: () => string;
     };
@@ -13,9 +13,10 @@
     console.log(typeof myCustomVariable);
 
     myCustomVariable = {
-        name: 'Barry Allen',
-        age: 24,
-        powers: [1, 2],
+        name: 'Bruce',
+        age: 43,
+        powers: [1],
     };
     console.log(typeof myCustomVariable);
+    console.log(myCustomVariable);
 })();

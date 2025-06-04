@@ -1,25 +1,19 @@
 (() => {
-    const addNUmber = (a: number, b: number): number => {
-        return a + b;
-    };
-
-    const greet = (name: string): string => {
-        return `Hello ${name}`;
-    };
-
-    const saveWord = () => `el mundo esta salvado`;
+    const addNumbers = (a: number, b: number) => a + b;
+    const greet = (name: string) => `Hola ${name}`;
+    const saveTheWorld = () => `El mundo está salvado!`;
 
     let myFunction: () => string;
 
-    // myFunction = 10;
-    // console.log({ myFunction });
+    //* myFunction = 10;
+    //* console.log(myFunction)
 
-    // myFunction = addNUmber;
-    // console.log(myFunction(10, 20));
+    // myFunction = addNumbers
+    // console.log( myFunction(1, 2) )
 
-    // myFunction = greet;
-    // console.log(myFunction('francisco'));
+    //? myFunction = greet
+    //? console.log( myFunction( 'Fernando' ) )
 
-    myFunction = saveWord;
+    myFunction = saveTheWorld;
     console.log(myFunction());
 })();

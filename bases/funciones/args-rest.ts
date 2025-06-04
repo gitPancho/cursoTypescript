@@ -1,7 +1,9 @@
 (() => {
-    const fulllName = (firstName: string, lastName: string, ...restArg: string[]): string => {
-        return `${firstName} ${restArg.join(' ')} ${lastName}`;
+    const fullName = (firstName: string, ...restArgs: string[]): string => {
+        return `${firstName} ${restArgs.join(' ')}`;
     };
-    const superman = fulllName('Clark', 'Joseph', 'Kent', 'Superman', 'Man of Steel', '1938-1939');
+
+    const superman = fullName('Clark', 'Joseph', 'Kent');
+
     console.log({ superman });
 })();

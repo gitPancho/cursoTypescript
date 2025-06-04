@@ -1,11 +1,10 @@
 (() => {
+    // const numbers: (string | number | boolean)[] = [1,2,3,4,5,'6',7,8,9,10];
     const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const villanos: string[] = ['Joker', 'Thanos', 'Magneto'];
-    let [one, two, three, , five, , seven, , nine, ten] = numbers;
-    let [joker, thanos, magneto] = villanos;
 
-    villanos.forEach(v => console.log(v.toUpperCase()));
+    const villians = ['Omega Rojo', 'Dormammu', 'Duende Verde'];
 
-    console.log(numbers);
-    console.log(villanos);
+    villians.forEach(v => console.log(v.toUpperCase()));
+
+    numbers.forEach(v => console.log(v));
 })();

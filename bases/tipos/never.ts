@@ -3,8 +3,10 @@
         if (false) {
             throw new Error(message);
         }
-        return 123;
+
+        return 1;
     };
 
-    error('auxilio');
+    error('Auxilio!');
+    console.log('Hola Mundo');
 })();
